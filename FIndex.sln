@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FIndex.Api", "FIndex.Api\FIndex.Api.csproj", "{0EC3D044-2965-47C6-BA81-1E8C963BAD21}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FIndex.Console", "FIndex.Console\FIndex.Console.csproj", "{CBF15601-ED26-4AD1-924B-2A10625FA051}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0EC3D044-2965-47C6-BA81-1E8C963BAD21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EC3D044-2965-47C6-BA81-1E8C963BAD21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EC3D044-2965-47C6-BA81-1E8C963BAD21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EC3D044-2965-47C6-BA81-1E8C963BAD21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBF15601-ED26-4AD1-924B-2A10625FA051}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBF15601-ED26-4AD1-924B-2A10625FA051}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBF15601-ED26-4AD1-924B-2A10625FA051}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBF15601-ED26-4AD1-924B-2A10625FA051}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
