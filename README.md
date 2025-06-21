@@ -43,7 +43,7 @@ This project consists of three main services: the Python-based embedding service
 | FIndex API        | `http://localhost:5181` |
 
 
-## 📄 License
+## License
 
 This project's **code** is licensed under the MIT License.
 You are free to use, modify, and distribute the code with proper attribution.
