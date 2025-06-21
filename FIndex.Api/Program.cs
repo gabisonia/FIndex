@@ -7,10 +7,10 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddHttpClient<EmbeddingService>(c =>
-    c.BaseAddress = new Uri("http://localhost:8000/embed"));
+    c.BaseAddress = new Uri("http://embedding-service:8000"));
 
 builder.Services.AddHttpClient<QdrantService>(c =>
-    c.BaseAddress = new Uri("http://localhost:6333"));
+    c.BaseAddress = new Uri("http://qdrant:6333"));
 
 var app = builder.Build();
 
