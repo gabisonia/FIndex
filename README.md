@@ -41,3 +41,15 @@ This project consists of three main services: the Python-based embedding service
 | Embedding Service | `http://localhost:8000` |
 | Qdrant            | `http://localhost:6333` |
 | FIndex API        | `http://localhost:5181` |
+
+
+## 📄 License
+
+This project's **code** is licensed under the MIT License.
+You are free to use, modify, and distribute the code with proper attribution.
+
+Some **images** used in this project are for **personal use and local experimentation only**.
+
+By using this repository, you agree **not to use any of the stored or uploaded images** (I'm not that pretty).
+
+
