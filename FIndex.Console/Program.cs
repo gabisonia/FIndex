@@ -3,6 +3,8 @@ using System.Text;
 using System.Text.Json;
 using FIndex.Console.Dtos;
 
+// Script to create and insert images into Qdrant db
+
 var imageFolder = "faces";
 var embedUrl = "http://localhost:8000/embed";
 var qdrantHost = "http://localhost:6333";
