@@ -29,6 +29,3 @@ async def embed_image(file: UploadFile = File(...)):
     
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
-
-#pip install -U insightface    
-#uvicorn main:app --host 0.0.0.0 --port 8000
