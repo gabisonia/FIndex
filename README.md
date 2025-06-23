@@ -1,5 +1,8 @@
 # FIndex
 
+Purpose:
+The goal of FIndex is to learn more about vector databases by building a practical system for face recognition and similarity search. This project demonstrates how to generate, store, and query facial embeddings using a vector database and RESTful APIs.
+
 FIndex is a face recognition and search system powered by embeddings, Qdrant vector database, and a lightweight REST API written in .NET 8. It allows you to embed faces from images, store their vectors, and search visually similar faces efficiently.
 
 ## Components
