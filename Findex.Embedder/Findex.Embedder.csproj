@@ -5,14 +5,25 @@
         <Nullable>enable</Nullable>
         <ImplicitUsings>enable</ImplicitUsings>
         <InvariantGlobalization>true</InvariantGlobalization>
+        <!-- Default RID for local builds -->
+        <RuntimeIdentifier Condition="'$(RuntimeIdentifier)' == ''">osx-arm64</RuntimeIdentifier>
     </PropertyGroup>
 
     <ItemGroup>
         <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.0"/>
         <PackageReference Include="Microsoft.ML.OnnxRuntime" Version="1.22.0"/>
         <PackageReference Include="OpenCvSharp4" Version="4.11.0.20250507"/>
-        <PackageReference Include="Sdcb.OpenCvSharp4.mini.runtime.osx-arm64" Version="4.11.0.34"/>
         <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0"/>
+    </ItemGroup>
+
+    <!-- macOS -->
+    <ItemGroup Condition="'$(RuntimeIdentifier)' == 'osx-arm64'">
+        <PackageReference Include="Sdcb.OpenCvSharp4.mini.runtime.osx-arm64" Version="4.11.0.34"/>
+    </ItemGroup>
+
+    <!-- Linux runtime -->
+    <ItemGroup Condition="'$(RuntimeIdentifier)' == 'linux-x64'">
+        <PackageReference Include="OpenCvSharp4_.runtime.ubuntu.20.04-x64" Version="4.10.0.20240616" />
     </ItemGroup>
 
     <ItemGroup>
