@@ -30,8 +30,7 @@ FIndex is a face recognition and search system powered by embeddings, Qdrant vec
 ### FIndex Embbeder (C# / ASP.NET Core/ ML.Net) - (In Progress)
 
 - Asp.net based microservice that takes an image and returns a 512-dimensional facial embedding.
-- Powered by ONNX Runtime and OpenCvSharp, using a pre-trained ResNet50 (WebFace600K) model.
-- - **Download Link**: [Google Drive](https://drive.usercontent.google.com/download?id=1N0GL-8ehw_bz2eZQWz2b0A5XBdXdxZhg)
+- Powered by ONNX Runtime and OpenCvSharp, using a pre-trained ResNet50 (WebFace600K) model. **Download Link**: [Google Drive](https://drive.usercontent.google.com/download?id=1N0GL-8ehw_bz2eZQWz2b0A5XBdXdxZhg)
 
 ## Run
 
