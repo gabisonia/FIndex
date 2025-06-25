@@ -1,7 +1,7 @@
 version: "3.9"
 
 services:
-  embedding-service:
+  embedding-service:  # ← Your existing Python-based embedder
     build:
       context: ./Embedder
       dockerfile: Dockerfile
@@ -10,6 +10,17 @@ services:
       - "8000:8000"
     volumes:
       - ~/.insightface/models:/root/.insightface/models
+    restart: unless-stopped
+
+  embedder-service:  # ← Your new C# ASP.NET Core service
+    build:
+      context: .
+      dockerfile: Findex.Embedder/Dockerfile
+    container_name: embedder-service
+    ports:
+      - "5443:8080"
+    volumes:
+      - ./Findex.Embedder/Data:/app/Data
     restart: unless-stopped
 
   qdrant:
@@ -24,11 +35,12 @@ services:
   api:
     build:
       context: .
-      dockerfile: FIndex.Api/Dockerfile
+      dockerfile: Findex.Api/Dockerfile
     container_name: findex-api
     ports:
       - "5181:8080"
     depends_on:
       - qdrant
       - embedding-service
+      - embedder-service
     restart: unless-stopped
