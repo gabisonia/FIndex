@@ -31,6 +31,12 @@ FIndex is a face recognition and search system powered by embeddings, Qdrant vec
 
 - Asp.net based microservice that takes an image and returns a 512-dimensional facial embedding.
 - Powered by ONNX Runtime and OpenCvSharp, using a pre-trained ResNet50 (WebFace600K) model. **Download Link**: [Google Drive](https://drive.usercontent.google.com/download?id=1N0GL-8ehw_bz2eZQWz2b0A5XBdXdxZhg)
+- When running locally on macOS, the following runtime package must be used:
+```
+<PackageReference Include="Sdcb.OpenCvSharp4.mini.runtime.osx-arm64" Version="4.11.0.34" />
+```
+This runtime works only on Mac (Apple Silicon - arm64) and will not work inside Linux Docker containers.
+
 
 ## Run
 
