@@ -8,8 +8,12 @@ namespace Findex.Embedder.Controllers;
 public class EmbedController(FaceEmbeddingService embeddingService) : ControllerBase
 {
     [HttpPost("/embed")]
-    public async Task<IActionResult> EmbedImage([FromForm] IFormFile? file)
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status400BadRequest)]
+    public async Task<IActionResult> EmbedImage([FromForm] EmbedImageRequest request)
     {
+        var file = request.File;
+
         if (file == null || file.Length == 0)
             return BadRequest("No file uploaded");
 
@@ -27,4 +31,9 @@ public class EmbedController(FaceEmbeddingService embeddingService) : Controller
 
         return new JsonResult(new { embedding = normalized });
     }
+}
+
+public class EmbedImageRequest
+{
+    [FromForm(Name = "file")] public IFormFile? File { get; set; }
 }
