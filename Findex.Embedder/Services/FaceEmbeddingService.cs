@@ -6,6 +6,7 @@ namespace Findex.Embedder.Services;
 
 public class FaceEmbeddingService
 {
+    // Model Download Link:  https://drive.usercontent.google.com/download?id=1N0GL-8ehw_bz2eZQWz2b0A5XBdXdxZhg
     private readonly InferenceSession _session = new("Data/webface_r50.onnx");
 
     public float[]? GetEmbedding(byte[] imageData)
