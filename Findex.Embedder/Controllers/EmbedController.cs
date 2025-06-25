@@ -13,7 +13,7 @@ public class EmbedController() : ControllerBase
         if (file == null || file.Length == 0)
             return BadRequest("No file uploaded");
 
-        var embeddingService = new BuffaloLModelService();
+        var embeddingService = new FaceEmbeddingService();
         using var ms = new MemoryStream();
         await file.CopyToAsync(ms);
         var imageData = ms.ToArray();

@@ -4,7 +4,7 @@ using OpenCvSharp;
 
 namespace Findex.Embedder.Services;
 
-public class BuffaloLModelService
+public class FaceEmbeddingService
 {
     private readonly InferenceSession _session = new("Data/webface_r50.onnx");
 
