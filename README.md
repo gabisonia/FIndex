@@ -50,11 +50,12 @@ This project consists of three main services: the Python-based embedding service
 
 ---
 
-| Service           | Host URL                |
-| ----------------- | ----------------------- |
-| Embedding Service | `http://localhost:8000` |
-| Qdrant            | `http://localhost:6333` |
-| FIndex API        | `http://localhost:5181` |
+| Service            | Host URL                |
+| -------------------| ----------------------- |
+| Embedding Service  | `http://localhost:8000` |
+| Qdrant             | `http://localhost:6333` |
+| FIndex API         | `http://localhost:5181` |
+| FIndex Embedder(C#)| `http://localhost:5443` |
 
 
 ## License
