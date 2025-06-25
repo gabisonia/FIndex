@@ -1,8 +1,15 @@
+# Build and packaging folders
 bin/
 obj/
-/packages/
-riderModule.iml
-/_ReSharper.Caches/
+packages/
 .vs/
 __pycache__/
 qdrant_data/
+
+# Rider / JetBrains
+riderModule.iml
+/.idea/
+/_ReSharper.Caches/
+
+# Ignore ONNX model
+Findex.Embedder/Data/webface_r50.onnx
