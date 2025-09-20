@@ -1,7 +1,7 @@
 version: "3.9"
 
 services:
-  embedding-service:  # ← Your existing Python-based embedder
+  embedding-service:
     build:
       context: ./Embedder
       dockerfile: Dockerfile
@@ -12,7 +12,7 @@ services:
       - ~/.insightface/models:/root/.insightface/models
     restart: unless-stopped
 
-  embedder-service:  # ← Your new C# ASP.NET Core service
+  embedder-service:
     build:
       context: .
       dockerfile: Findex.Embedder/Dockerfile
