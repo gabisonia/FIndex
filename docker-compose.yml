@@ -7,7 +7,7 @@ services:
       dockerfile: Dockerfile
     container_name: embedding-service
     ports:
-      - "8000:8000"
+      - "8001:8000"
     volumes:
       - ~/.insightface/models:/root/.insightface/models
     restart: unless-stopped
@@ -16,6 +16,8 @@ services:
     build:
       context: .
       dockerfile: Findex.Embedder/Dockerfile
+      platforms:
+        - linux/amd64
     container_name: embedder-service
     ports:
       - "5443:8080"
