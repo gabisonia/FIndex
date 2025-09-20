@@ -12,7 +12,7 @@ services:
       - ~/.insightface/models:/root/.insightface/models
     restart: unless-stopped
 
-  embedder-service:  # ← Your new C# ASP.NET Core service
+  embedder-service:
     build:
       context: .
       dockerfile: Findex.Embedder/Dockerfile
